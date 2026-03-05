@@ -19,7 +19,7 @@ You will need:
 | Requirement | Description |
 |-------------|-------------|
 | **Solana Wallet** | A funded wallet with SOL for trading. Create one with: `solana-keygen new -o wallet.json` |
-| **RPC Access** | API keys from providers like Helius, Shyft, QuickNode, or Alchemy |
+| **RPC Access** | Get access to [allenhark.com](https://allenhark.com) for RPC access |
 | **ShredStream** | Access to AllenHark ShredStream for real-time data. Sign up at [allenhark.com](https://allenhark.com) |
 
 ## 🔧 Installation
@@ -127,10 +127,11 @@ tip_lamports = 1_000_000
 **Example:**
 ```toml
 use_fast_sender = true
-default_rpc = "https://rpc.shyft.to?api_key=YOUR_KEY"
-default_wss_rpc = "wss://rpc.shyft.to?api_key=YOUR_KEY"
+default_rpc = "http://[Allenhark_rpc_ip]:8899"
+default_wss_rpc = "ws://[Allenhark_rpc_ip]:8899"
 
 rpc_pool = [
+    "http://[Allenhark_rpc_ip]:8899",
     "https://mainnet.helius-rpc.com/?api-key=YOUR_KEY",
     "https://rpc.shyft.to?api_key=YOUR_KEY",
     "https://solana-mainnet.g.alchemy.com/v2/YOUR_KEY"
@@ -372,4 +373,4 @@ live = true
 
 ---
 
-**Built with ⚡ by AllenHark** | **Powered by AllenHark ShredStream**
+**Built with ⚡ by AllenHark** | **Powered by ShredStream**
